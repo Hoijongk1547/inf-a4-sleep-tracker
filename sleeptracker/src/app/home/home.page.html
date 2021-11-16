@@ -1,0 +1,66 @@
+
+<!--DONOTTOUCHTHIS-->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      SleepTracker
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!--DONOTTOUCHTHIS-->
+<ion-content class="slide-page">
+  
+  <ion-slides pager>
+
+    <ion-slide style="background-color: white">
+     
+      <ion-card (click)= "reportModal()">
+        <img src="../assets/sleep.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Report sleep time
+       </ion-card-title>
+      <p>
+        Report when to sleep and when to wake up daily. 
+      </p>
+    </ion-card-content>
+      </ion-card>
+  
+    </ion-slide>
+  
+    <ion-slide style="background-color: white">
+     
+      <ion-card (click)= "sleepinessModal()">
+        <img src="../assets/sleepiness1.png"/>
+        <ion-card-content>
+          <ion-card-title>
+            Report sleepiness
+       </ion-card-title>
+      <p>
+       Report what degree are you sleepy at a specific time.
+      </p>
+    </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  
+    <ion-slide style="background-color: white">
+   
+      
+      <ion-card (click)= "viewDataModal()">
+        <img src="../assets/clipboard.png"/>
+        <ion-card-content>
+          <ion-card-title>
+            View logged data
+       </ion-card-title>
+      <p>
+       Check the list of your daily sleep time or sleepiness.
+      </p>
+    </ion-card-content>
+      </ion-card>
+  
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>
+<!--DONOTTOUCHTHIS-->

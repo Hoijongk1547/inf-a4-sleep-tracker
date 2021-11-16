@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="close()">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>DailyReport</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Set time</ion-list-header>
+    <ion-item>
+      <ion-label>Start Date</ion-label>
+      <ion-datetime displayFormat="MM-DD HH:mm" [(ngModel)]="start"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>End Date</ion-label>
+      <ion-datetime displayFormat="MM-DD HH:mm" [(ngModel)]="end"></ion-datetime>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" color="primary" (click)="presentAlert()">Save</ion-button>
+</ion-content>

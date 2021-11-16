@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="close()">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>SleepyScale</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>Set time</ion-list-header>
+  <ion-item>
+    
+    <ion-datetime placeholder = "Select time " displayFormat="MM-DD HH:mm" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item>
+  </ion-list>
+
+
+<ion-list>
+  <ion-list-header>Sleepniess scale</ion-list-header>
+  <ion-item>
+    <ion-select placeholder="Select One" [(ngModel)]= "scale">
+      <ion-select-option value="1">Feeling active, vital, alert, or wide awake</ion-select-option>
+      <ion-select-option value="2">Functioning at high levels, but not at peak; able to concentrate</ion-select-option>
+      <ion-select-option value="3">Awake, but relaxed; responsive but not fully alert</ion-select-option>
+      <ion-select-option value="4">Somewhat foggy, let down</ion-select-option>
+      <ion-select-option value="5">Foggy; losing interest in remaining awake; slowed down</ion-select-option>
+      <ion-select-option value="6">Sleepy, woozy, fighting sleep; prefer to lie down</ion-select-option>
+      <ion-select-option value="7">No longer fighting sleep, sleep onset soon; having dream-like thoughts</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button expand="full" color="primary"  (click)="presentAlert()">Save</ion-button>
+</ion-list>
+
+
+
+
+</ion-content>

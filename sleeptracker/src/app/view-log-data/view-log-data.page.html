@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="close()">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>ViewLogData</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor = "let data of sleepData">
+    <ion-card-header>
+      {{data.dateString()}}
+    </ion-card-header>
+    <ion-card-content>
+      {{data.summaryString()}}</ion-card-content>
+  </ion-card>
+  
+
+  
+</ion-content>
+<ion-button expand="full" color="dark" (click)="clear()" (click)="presentAlert()">Clear the data</ion-button>
